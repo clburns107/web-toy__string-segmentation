@@ -8,9 +8,13 @@ class SSTest < Minitest::Test
   end
 
   # The actual tests go below this comment.
-  
-end
+  def test_your_words
+  get '/catspajamas'
+  assert last_response.ok?
+  assert_includes last_response.body, "cats, pajamas"
+  end
 
+end
 
 
 
