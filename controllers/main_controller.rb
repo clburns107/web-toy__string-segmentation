@@ -1,6 +1,10 @@
+require_relative '../lib/string_segmenter.rb'
+
+
 # The path being defined for this controller action is just "/", meaning 
 # the root path. It's the homepage.
-MyApp.get "/" do
+MyApp.get "/:peopleenterwords" do
+  @x = AllTheWords.new
   # If a GET request is made to the root path, the following line of code
   # looks for a .erb view file located in the 'views' directory at the given
   # location. So it's going to look for views/main/welcome.erb.
