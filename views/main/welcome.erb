@@ -1,9 +1,5 @@
 <h1>Welcome!</h1>
 
-<%= @x.find_the_words("longcatsgo")%>
-<p>These are the words you are looking for: <%= @x.here_are_the_words%> </p>
+<%= @x.find_the_words(params[:peopleenterwords])%>
 
-
-
-<p>
-<%=params[:peopleenterwords]%></p>
+<p>These are the words you are looking for: <%= @x.here_are_the_words.join(", ")%> </p>

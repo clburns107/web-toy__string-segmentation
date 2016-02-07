@@ -13,3 +13,7 @@ MyApp.get "/:peopleenterwords" do
   # combined document back to the client.
   erb :"main/welcome"
 end
+
+
+# def user_string
+#   find_the_words(params[:peopleenterwords]).join(", ")
